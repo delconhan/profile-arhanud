@@ -1,0 +1,121 @@
+/* style.css */
+
+/* Pengaturan Dasar Halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Latar belakang halaman abu-abu muda */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #3498db; /* Warna biru cerah */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* Konten Utama dan Kartu Profil */
+.profile-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Latar belakang konten putih */
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Gambar dan Kontainer */
+.image-container {
+    flex-shrink: 0; /* Mencegah gambar menyusut */
+    text-align: center;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat gambar bulat */
+    border: 5px solid #2ecc71; /* Border gambar warna hijau */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    margin-top: 15px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Konten Teks */
+.content {
+    flex-grow: 1;
+}
+
+.content h2 {
+    color: #34495e; /* Warna abu-abu gelap */
+    margin-top: 0;
+}
+
+.content h3 {
+    color: #e67e22; /* Warna oranye terang */
+    border-left: 3px solid #e67e22;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+/* Paragraf Penting (Highlight) */
+.highlight {
+    background-color: #f9f9e8; /* Latar belakang kuning muda untuk highlight */
+    border-left: 5px solid #f1c40f; /* Border kuning tua */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Tombol */
+.btn-contact {
+    display: inline-block;
+    background-color: #2ecc71; /* Warna hijau untuk tombol */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #27ae60; /* Warna hijau gelap saat di-hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #bdc3c7; /* Warna abu-abu sedang */
+    color: #34495e;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Pengaturan untuk Layar Kecil (Responsif) */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column; /* Ubah tata letak menjadi vertikal */
+        align-items: center;
+        padding: 20px;
+    }
+}
